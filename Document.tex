@@ -1,0 +1,61 @@
+\documentclass[fontsize=11pt, a4, paper=landscape,pagesize=dvips]{article}
+
+\usepackage{amsmath} % for enhanced math operations
+\usepackage{float}
+\usepackage{graphicx} % to include graphics
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{relsize}
+\usepackage{multirow} % for merging multiple rows and columns in tables
+\usepackage{fullpage}
+\usepackage{cite}
+\usepackage[left=0.75in,top=1in,bottom=0.5in,right=0.75in ]{geometry }
+\usepackage{hyperref} %For URL Display
+\usepackage{fancyhdr} %For header and footer display
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}\thispagestyle{empty}
+\begin{center}
+\LARGE{\textsc{Technische Universit\"{a}t Bergakademie Freiberg\\
+   Institute of mechanics and fluid dynamics\\
+   Chair of Applied Mechanics - Solid Mechanics\\} }
+   \vspace{40mm}
+Documentation\\
+   \vspace{5mm}
+Implementing User Element for Phase field simulations of polarization switching-induced
+toughening in ferroelectric ceramics\\
+   \vspace{5mm}
+   06. October 2019\\
+   \vspace{20mm}
+   Vikas Diddige\\
+   vikas.diddige@tu-freiberg.de\\
+   \vspace{10mm}   
+   TU Bergakademie Freiberg\\
+   Lampadiusstra\ss e 4\\
+   D-09596 Freiberg Germany\\
+   \large\url{https://tu-freiberg.de/fakult4/imfd}
+
+\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\newpage
+\twocolumn
+\tableofcontents %For displaying table of contents automatically from sections and subsections
+\pagenumbering{gobble} %to supress page number
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\newpage
+\pagenumbering{arabic}
+\input{content/abstract.tex}
+\newpage
+\input{content/strongweakformulation.tex}
+
+
+\end{document}
